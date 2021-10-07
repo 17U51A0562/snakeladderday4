@@ -20,7 +20,7 @@ public class Game_With_Player2UC7 {
 		int player1DiceCount = 0;
 		int player2DiceCount = 0;
 
-		while (player1Position < WINNING_POSITION && player2Position < WINNING_POSITION) {
+		while (player1Position < WINNING_POSITION || player2Position < WINNING_POSITION) {
 			++diceCount;
 			if (turn.equals("player1")) {
 				turn = "player2";
